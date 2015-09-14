@@ -1,0 +1,5 @@
+name = UI Kit
+description = Helper module to build Drupal forms in a more OOP way.
+core = 7.x
+
+dependencies[] = xautoload

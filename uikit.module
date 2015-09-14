@@ -1,0 +1,31 @@
+<?php
+
+require __DIR__ . '/uikit.form.inc';
+require __DIR__ . '/uikit.elements.inc';
+
+/**
+ * Implements hook_theme()
+ *
+ * @return array[]
+ */
+function uikit_theme() {
+  return array(
+    /* @see uikit_element_info() */
+    /* @see theme_uikit_element() */
+    'uikit_element' => array(
+      'render element' => 'element',
+      'file' => 'uikit.theme.inc',
+    ),
+    // Replacement for theme('form_element') as element wrapper.
+    /* @see theme_uikit_form_element() */
+    'uikit_form_element' => array(
+      'render element' => 'element',
+      'file' => 'uikit.theme.inc',
+    ),
+    /* @see theme_uikit_inline_element() */
+    'uikit_inline_element' => array(
+      'render element' => 'element',
+      'file' => 'uikit.theme.inc',
+    ),
+  );
+}
